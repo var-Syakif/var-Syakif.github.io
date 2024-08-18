@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profil Pribadi</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+      box-sizing: border-box;
+  }
+  header{
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-variant: small-caps;
+  }
+  header h1{
+      color: blueviolet;
+      font-weight: 700;
+      margin: auto;
+      font-size: 1.4rem;
+      text-align: center;
+  }
+  header nav ul{
+      display: flex;
+  }
+  header nav ul li{
+      list-style: none;
+      padding: 1.4rem;
+      text-align: center;
+  }
+  header nav ul li a{
+      color: black;
+      text-decoration: currentColor;
+  }
+  header nav ul li a:hover{
+      color: blueviolet;
+      transition: .2s linear;
+  }
+  header nav ul li a:hover::after{
+      content: "";
+      display: block;
+      margin: auto;
+      width: 1.5rem;
+      height: .01rem;
+      background-color: black;
+  }
+  
+  /* content */
+  main{
+      display: block;
+  }
+  main #about{
+      display: block;
+      
+  }
+  main .awal {
+      display: flex;
+  }
+  main #about img{
+      border-radius: 60%;
+      width: 25rem;
+  }
+  main .awal p{
+      font-size: 3rem;
+      font-weight: 900;
+      height: 10rem;
+      width: fit-content;
+      margin: auto;
+  }
+  main .awal p .hello{
+      display: block;
+
+  }
+  main #about h2{
+      font-variant: small-caps;
+      font-size: 2rem;
+      text-align: center;
+  }
+  main #about p{
+      text-align: center;
+      font-variant: small-caps;
+  }
+  
+  
+  
+  
+  
+  #skills h2{
+      margin-top: 5rem;
+      background-color: blueviolet;
+      text-align: center;
+  }
+  #skills ul{
+      display: flex;
+      align-items: center;
+      line-height: 5rem;
+      font-variant: small-caps;
+      justify-content: space-around;
+  }
+  
+  
+  #hobbies h2{
+      margin-top: 5rem;
+      background-color: blueviolet;
+      text-align: center;
+  }
+  #hobbies ul{
+      display: flex;
+      align-items: center;
+      line-height: 5rem;
+      font-variant: small-caps;
+      justify-content: space-around;
+  }
+  
+  
+  #contact h2{
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      background-color: blueviolet;
+      text-align: center;
+  }
+  #contact p{
+      line-height: 2rem;
+      text-align: center;
+      font-variant: small-caps;
+  }
+  
+  #portfolio{
+      display: block;
+      margin-top: 8rem;
+      font-variant: small-caps;
+  }
+  #portfolio h2{
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  #portfolio ul {
+      align-items: center;
+      justify-content: space-around;
+      display: flex;
+  }
+  footer{
+      margin-top: 4rem;
+      display: block;
+      background-color: rgb(73, 8, 134);
+  }
+  footer p{
+      font-size: 1rem;
+      color: #fff;
+      font-variant: small-caps;
+      line-height: 5rem;
+      text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <header>
+   <h1>Daniel novalino</h1>
+    <nav>
+      <ul>
+        <li><a href="#about" id="about-me">Tentang Saya</a></li>
+        <li><a href="#skills">Kemampuan</a></li>
+        <li><a href="#hobbies">Hobi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+     </nav>
+   </header>
+   <main>
+     <section id="about">
+      <div class="awal">
+      <img src="./WhatsApp Image 2024-02-13 at 10.28.58_84e8d692.jpg" alt="">
+      <p>SELAMAT DATANG <span class="hello"></span> </p>
+      </div>
+      <h2>Tentang Saya</h2>
+      <p>saya? saya adalah salah satu siswa smkn 2 kota Probolinggo.</p>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <a href="path/to/project_1.html">View</a>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <a href="path/to/project_2.html">View</a>
+            </li>
+            <li>
+                <h3>Project 3</h3>
+                <a href="path/to/project_3.html">View</a>
+            </li>
+        </ul>
+    </section>
+
+      </section>
+    <section id="skills">
+      <h2>Kemampuan saya</h2>
+      <ul>
+        <li>Menggambar</li>
+        <li>Ngedesain</li>
+        <li>Mengedit foto</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobi Saya</h2>
+      <ul>
+        <li>Melihat ke indahan alam</li>
+        <li>Bermain Bulu tangkis</li>
+        <li>Mencari tau hal yg tidak di ketahui saya</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Kontak Saya</h2>
+      <p>Email: gtnval03@gmail.com</p>
+      <p>Telepon: 082234505622</p>
+      <p>Alamat: Jl.Kh,hasan Genggong,Gg anggrek.Indonesia</p>
+    </section>
+
+  </main>
+  <footer>
+    <p>Dibuat dengan HTML dan CSS</p>
+  </footer>
+
+
+
+
+  
+      <!-- perkenalan -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+          var typingEfect = new Typed(".hello",{
+              strings : ['DUNIA','PROBOLINGGO','SMKN 2 PROBOLINGGO'],
+              loop : true,
+              typeSpeed : 100,
+              backSpeed : 100
+          })
+      </script>
+ 
+</body>
+</html>
